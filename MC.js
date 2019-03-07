@@ -1,5 +1,6 @@
 function decode()
 {
+
 	
 var message = document.getElementById("message").value;	
 var alphabet = {"/":" ","-----":"0",".----":"1","..---":"2","...--":"3","....-":"4",
@@ -9,14 +10,18 @@ var alphabet = {"/":" ","-----":"0",".----":"1","..---":"2","...--":"3","....-":
 				".--.":"p","--.-":"q",".-.":"r","...":"s","-":"t","..-":"u","...-":"v",
 				".--":"w","-..-":"x","-.--":"y","--..":"z"};
 
-var messageConverted = [];
+var morseCODE = [];
 
-	message.split("   ").map(function (word) {
-		word.split(" ").map(function (letter) {
-			messageConverted.push(alphabet[letter]);
-    });
+	message.split(" ").map(function (letter) {
+			morseCODE.push(alphabet[letter]);
+
 });
  
-	document.getElementById("output_area").innerHTML = messageConverted.join("");
+	document.getElementById("output_area").innerHTML = morseCODE.join("");
 	document.getElementById("output_area").style.opacity= "0" ;
 }
+
+// Citation
+// Guidance for Code
+// L, E. (2017). js decoding morse code. [online] Stack Overflow.
+// Available at: https://stackoverflow.com/questions/43726344/js-decoding-morse-code [Accessed 7 Mar. 2019]

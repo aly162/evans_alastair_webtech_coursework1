@@ -16,3 +16,8 @@ function fadein() {
 				   }
 
 
+// Citation
+// Guidance for Code
+// Stack Overflow. (2015). Pure JavaScript fade in and out - fade in not working.
+// [online] Available at:
+// https://stackoverflow.com/questions/29073294/pure-javascript-fade-in-and-out-fade-in-not-working [Accessed 7 Mar. 2019].
